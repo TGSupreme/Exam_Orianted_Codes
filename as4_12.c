@@ -22,11 +22,11 @@ int main(){
 	}
 	
 	printf("\n\n");
-	printf("Enter The 1st Matrix B  \n");
+	printf("Enter The 2nd Matrix B  \n");
 	for(i=0;i<row;i++){
 		for(j=0;j<col;j++){
 			printf("Enter The Element [%d,%d] Of B : ",i+1,j+1);
-			scanf("%d",&a[i][j]);
+			scanf("%d",&b[i][j]);
 		}
 	}
 	
