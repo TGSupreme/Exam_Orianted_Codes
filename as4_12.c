@@ -1,11 +1,17 @@
 #include <stdio.h>
 
 int main(){
-//12 Write a program to add two 2×2 matrix
+//12 Write a program to add two 2ï¿½2 matrix
 
 	int row=2,col=2,i,j;
-	int a[row][col],b[row][col],c[row][col]={ 0 };
-	
+	int a[row][col],b[row][col],c[][];
+
+
+//	for(i=0;i<row;i++){
+//		for(j=0;j<col;j++){
+//			c[i][j]=0;
+//		}
+//	}	
 	printf("Enter The 1st Matrix A  \n");
 	for(i=0;i<row;i++){
 		for(j=0;j<col;j++){
