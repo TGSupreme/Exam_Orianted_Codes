@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*Write a program to sort given array in ascending order (Use Insertion sort, Bubble sort,
+Selection sort,Mergesort, Quicksort, Heapsort)
+*/
+
 void printArray(int arr[], int n);
 void swap(int *a, int *b);
 void insertionSort(int arr[], int n);
