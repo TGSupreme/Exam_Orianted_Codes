@@ -2,13 +2,19 @@
 
 int main() {
 	
+/*60. A file named data contains series of integer numbers. Write a c program to read all
+numbers from file and then write all odd numbers into file named “odd” and write all
+even numbers into file named “even”. Display all the contents of these file on screen*/
+
 	printf("\tAnalysis Of Data Of File\n");
     printf("==========================================\n");
     
   FILE * f1, * f2, * f3;
   int number, i, n = 10;
 
-//  printf("Contents of DATA file\n\n");
+//<-----this for 1st time execution----> Enter 10 numbers
+
+//  printf("Enter Contents of DATA file\n\n");
 //
 //  f1 = fopen("DATA", "w");
 //
@@ -20,6 +26,7 @@ int main() {
 //    putw(number, f1);
 //  }
 //  fclose(f1);
+//<------------------------------------>
 
   f1 = fopen("DATA", "r");
   f2 = fopen("ODD", "w");
@@ -37,8 +44,15 @@ int main() {
   fclose(f2);
   fclose(f3);
 
+  f1 = fopen("DATA", "r");
   f2 = fopen("ODD", "r");
   f3 = fopen("EVEN", "r");
+  
+printf("\n\nContents Of DATA File :\n\n");
+
+  while ((number = getw(f1)) != EOF) {
+    printf("%d ", number);
+  }
 
   printf("\n\nContents Of ODD File :\n\n");
 
